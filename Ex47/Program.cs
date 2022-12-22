@@ -16,11 +16,11 @@ for (int rows = 0; rows < matrix.GetLength(0); rows ++)
     Console.WriteLine();
 }
 
-void Fill (int[,]matrix)
+void FillArray (int[,]matrix)
 {
     for (int i  = 0; i< matrix.GetLength(0); i++)
     {
-        for (int j  = 0; j< matrix.GetLength(0); j++)
+        for (int j  = 0; j< matrix.GetLength(1); j++)
         {
            matrix[i,j] = new Random().Next(1,100); 
         }
@@ -34,5 +34,5 @@ int n  = int.Parse (Console.ReadLine());
 int[,]matrix = new int [m, n];
 
 PrintArray(matrix);
-Fill(matrix);
+FillArray(matrix);
 PrintArray(matrix);

@@ -53,8 +53,8 @@ int Valueposition(int i, int j, int[,]matrix)
 
 //Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
 
-int row  = int.Parse (Console.ReadLine());
-int col  = int.Parse (Console.ReadLine());
+int row  = new Random().Next(1,10); 
+int col  = new Random().Next(1,10); 
 int[,]matr = new int [row, col];
 
 
